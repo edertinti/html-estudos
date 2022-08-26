@@ -1,2 +1,2 @@
-# html-estudos
-repositório dedicado para arquivos relacionados aos estudos de HTML
+# HTML-estudos
+Este repositório é dedicado para arquivos relacionados aos estudos de HTML.
