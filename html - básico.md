@@ -34,12 +34,25 @@ Neste exemplo temos as tags: <br>
 - `<head> </head>` = Esse elemento age como um recipiente de tudo o que se deseja incluir em uma página HTML que não seja conteúdo. Inclui *palavras-chave*, *CSS* para dar estilo ao conteúdo, etc.
 - `<meta charset="utf-8">` = Elemento que define o conjunto de caracteres que seu documento deve usar para o UTF-8, que inclui praticamente todos os caracteres da grande maioria dos idiomas escritos.
 - `<title> </title>` = Define o título da página, que aparecerá na guia do navegador. Ele também é usado para descrever a página quando você a adiciona aos favoritos.
-
+- `<body></body>` = Contém todo conteúdo que se deseja mostrar ao público visitante da página, seja texto, imagens, vídeos, jogos, etc.
 <br>
 
 ### Aninhamento
 É possível colocar elementos dentro de outro elemento, isto é denominado **aninhamento**.<br>
 Como exemplo, podemos utilizar a tag `<strong>` para enfatizar uma parte do texto dentro de uma tag `<p>`.<br>
 No entanto, é necessário ter cuidado para abrir e fechar corretamente os elementos.
+<br>
+### Elementos vazios
+Alguns elementos não possuem conteúdo e são chamados de **elementos vazios**. Como exemplo, consideremos o elemento `<img>` em uma página HTML: <br>
+`<img src="imagens/nomedaimagem.png" alt="Minha imagem de teste">` <br>
+O elemento acima contém dois atributos, mas não há tag de fechamento `</img>`, e não há conteúdo interno. <br>
+Isso acontece porque sua proposta é incorporar uma imagem na página HTML no lugar que apareceria o código, assim, o elemento da imagem não envolve conteúdo para ter efeito em si mesmo. <br>
+### Imagens
+Como mencionado acima, o elemento `<img>` incorpora uma imagem na página, na posição que aparece. Isso é feito pelo atributo *source*: `src`, que contém o caminho para o arquivo de imagem. <br>
+Também há o atributo *alternative*: `alt`, onde podemos especificar um texto descritivo para usuários que não podem ver a imagem, seja por serem deficientes visuais, e utilizarem ferramentas de leitores de tela, ou por algum erro que não permitiu o carregamento da imagem. <br>
+Uma boa prática é garantir que o texto alternativo forneça ao leitor informações suficientes para ter uma boa ideia do que a imagem mostra. <br>
+## Marcando o texto
+
+
 
 
