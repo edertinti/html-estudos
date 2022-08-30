@@ -52,7 +52,48 @@ Como mencionado acima, o elemento `<img>` incorpora uma imagem na página, na po
 Também há o atributo *alternative*: `alt`, onde podemos especificar um texto descritivo para usuários que não podem ver a imagem, seja por serem deficientes visuais, e utilizarem ferramentas de leitores de tela, ou por algum erro que não permitiu o carregamento da imagem. <br>
 Uma boa prática é garantir que o texto alternativo forneça ao leitor informações suficientes para ter uma boa ideia do que a imagem mostra. <br>
 ## Marcando o texto
+Alguns elementos HTML são essenciais para *marcar* o texto. Vejamos alguns deles:<br>
+### Cabeçalhos
+Permitem especificar que certas partes do conteúdo são títulos ou subtítulos. Assim como um livro tem o título principal, e os capítulos possuem título e subtítulos, um documento HTML também possui divisões.<br>
+Há seis níveis de título, embora normalmente são utilizados três a quatro.
+~~~
+<h1>Meu título principal</h1>
+<h2>Meu título de alto nível</h2>
+<h3>Meu subtítulo</h3>
+<h4>Meu segundo subtítulo</h4>
+~~~
+Uma boa prática é não utilizar elemento de cabeçalho para aumentar ou negritar o texto, pois eles são usados para acessibilidade e outros motivos, como SEO. É importante criar uma sequência significativa de títulos em suas páginas, sem pular os níveis. <br>
+### Parágrafo
+Os elementos `<p>` são utilizados para conter um parágrafo de texto. São usados com frequência ao marcar um conteúdo de texto regular: <br>
+`<p>Este é um parágrafo simples</p>` <br>
+### Listas
+No HTML é possível utilizar o elemento especial *listas*. Listas de marcação sempre consistem em pelo menos dois elementos. Os tipos mais comuns de lista são ordenadas e não ordenadas: <br>
+- **Listas não ordenadas:** são para listas onde a ordem dos itens não importa, como por exemplo em uma lista de compras. São envolvidas no elemento `<ul>`.<br>
+- **Listas ordenadas**: são para listas onde a ordem dos itens importa, como uma receita. São envolvidas pelo elemento `<ol>`.<br>
+<br>Cada item dentro da lista é posto dentro de um elemento `<li>`, que significa item de lista. <br>
+Como por exemplo, podemos tornar a parte de um parágrafo em uma lista:
+~~~
+<p>Preciso comprar: arroz, feijão, alface, ovo.</p>
+~~~
+Podendo escrevê-lo assim:
+~~~
+<p>Preciso comprar:</p>
 
-
-
-
+<ul>
+  <li>arroz</li>
+  <li>feijão</li>
+  <li>alface</li>
+  <li>ovo</li>
+</ul>
+~~~
+### Links
+Os links são muito importantes, pois fazem a web ser uma rede. Para adicionar um link usamos o elemento `<a>`, que é a forma abreviada de *âncora*.<br>
+Para transformar o texto de um paragráfo em em link, basta seguirmos as seguintes etapas:<br>
+1.  Escolha algum texto. Por exemplo: "Clique aqui para ir para a página";
+2.  Envolva o texto com o elemento `<a>`;<br>
+`<a>Clique aqui para ir para a página</a>`
+3.   Inclua no elemento `<a>` o atributo `href`:<br>
+`<a href="">Clique aqui para ir para a página</a>` 
+4.  Preencha o valor do atributo `href` com o endereço web que deseja vincular ao link:<br>
+`<a href="https://www.sitequeseradirecionado.com">Clique aqui para ir para a página</a>` <br>
+<br>Atenção ao omitir o *protocolo* `http://` ou o *protocolo* `https://` no começo do endereço web, para que não se obtenha um resultado inesperado. Por isso, após a criação de um link, clique nele para ter certeza que esta sendo redirecionado corretamente.   
